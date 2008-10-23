@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2DCCA907AA8D24006F9084 /* NKDCrimsonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2DCCA707AA8D24006F9084 /* NKDCrimsonAppDelegate.m */; };
+		1F2DCCAA07AA8D24006F9084 /* NKDCrimsonAppDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F2DCCA807AA8D24006F9084 /* NKDCrimsonAppDelegate.h */; };
+		1F63BF7407AA8E0F00966728 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F63BF7207AA8E0F00966728 /* Carbon.framework */; };
+		1F63BF7507AA8E0F00966728 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F63BF7307AA8E0F00966728 /* QuickTime.framework */; };
+		1F63BF7C07AA8E3800966728 /* CompressMovie.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BF7807AA8E3800966728 /* CompressMovie.c */; };
+		1F63BF7D07AA8E3800966728 /* CompressMovie.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BF7907AA8E3800966728 /* CompressMovie.h */; };
+		1F63BF7E07AA8E3800966728 /* DTSQTUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BF7A07AA8E3800966728 /* DTSQTUtilities.c */; };
+		1F63BF7F07AA8E3800966728 /* DTSQTUtilities.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BF7B07AA8E3800966728 /* DTSQTUtilities.h */; };
+		1F63BF8607AA8E9900966728 /* NKDMutableMovie.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BF8407AA8E9900966728 /* NKDMutableMovie.h */; };
+		1F63BF8707AA8E9900966728 /* NKDMutableMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BF8507AA8E9900966728 /* NKDMutableMovie.m */; };
+		1F63BF9707AA8ED800966728 /* NSImage-Filter.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BF9107AA8ED800966728 /* NSImage-Filter.h */; };
+		1F63BF9807AA8ED800966728 /* NSImage-Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BF9207AA8ED800966728 /* NSImage-Filter.m */; };
+		1F63BF9907AA8ED800966728 /* NSImage-Mosaic.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BF9307AA8ED800966728 /* NSImage-Mosaic.h */; };
+		1F63BF9A07AA8ED800966728 /* NSImage-Mosaic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BF9407AA8ED800966728 /* NSImage-Mosaic.m */; };
+		1F63BF9B07AA8ED800966728 /* NSString+FSSpec.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BF9507AA8ED800966728 /* NSString+FSSpec.h */; };
+		1F63BF9C07AA8ED800966728 /* NSString+FSSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BF9607AA8ED800966728 /* NSString+FSSpec.m */; };
+		1F63BFA807AA8F4100966728 /* NKDConvolutionKernel.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BFA607AA8F4100966728 /* NKDConvolutionKernel.h */; };
+		1F63BFA907AA8F4100966728 /* NKDConvolutionKernel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BFA707AA8F4100966728 /* NKDConvolutionKernel.m */; };
+		1F63BFB107AA8F6E00966728 /* NSBezierPath-Saber.h in Resources */ = {isa = PBXBuildFile; fileRef = 1F63BFAF07AA8F6E00966728 /* NSBezierPath-Saber.h */; };
+		1F63BFB207AA8F6E00966728 /* NSBezierPath-Saber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F63BFB007AA8F6E00966728 /* NSBezierPath-Saber.m */; };
+		1F63BFF707AA907A00966728 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F63BFF607AA907A00966728 /* Accelerate.framework */; };
+		1F67BC8F07AA988500044BBB /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 1F67BC8E07AA988500044BBB /* Credits.html */; };
+		1F9B560209892EA900B0230B /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9B55F409892EA900B0230B /* QTKit.framework */; };
+		1FAE5D3807AAA6AB0078308F /* back_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAE5D3407AAA6AB0078308F /* back_3.png */; };
+		1FAE5D3907AAA6AB0078308F /* play_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAE5D3507AAA6AB0078308F /* play_3.png */; };
+		1FAE5D3A07AAA6AB0078308F /* skip_back_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAE5D3607AAA6AB0078308F /* skip_back_3.png */; };
+		1FAE5D3B07AAA6AB0078308F /* skipforward_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FAE5D3707AAA6AB0078308F /* skipforward_3.png */; };
+		1FAE5D5607AAA7410078308F /* NKDCrimsonMovieFrameView.h in Resources */ = {isa = PBXBuildFile; fileRef = 1FAE5D5407AAA7410078308F /* NKDCrimsonMovieFrameView.h */; };
+		1FAE5D5707AAA7410078308F /* NKDCrimsonMovieFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE5D5507AAA7410078308F /* NKDCrimsonMovieFrameView.m */; };
+		1FB4929F07AE6B35005122E0 /* keyback.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB4929D07AE6B35005122E0 /* keyback.png */; };
+		1FB492A007AE6B35005122E0 /* keyforward.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB4929E07AE6B35005122E0 /* keyforward.png */; };
+		1FC0879B07AAA2EA00A06846 /* crimson.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1FC0879A07AAA2EA00A06846 /* crimson.icns */; };
+		1FC087AF07AAA4F300A06846 /* crimsondoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1FC087AE07AAA4F300A06846 /* crimsondoc.icns */; };
+		1FC84E3607AEFB35004D896D /* NSColor-interpolate.h in Resources */ = {isa = PBXBuildFile; fileRef = 1FC84E3407AEFB35004D896D /* NSColor-interpolate.h */; };
+		1FC84E3707AEFB35004D896D /* NSColor-interpolate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC84E3507AEFB35004D896D /* NSColor-interpolate.m */; };
+		1FF314DF07AB37FC00AA6D24 /* NKDLaserEffectSettings.h in Resources */ = {isa = PBXBuildFile; fileRef = 1FF314DD07AB37FC00AA6D24 /* NKDLaserEffectSettings.h */; };
+		1FF314E007AB37FC00AA6D24 /* NKDLaserEffectSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF314DE07AB37FC00AA6D24 /* NKDLaserEffectSettings.m */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2E0486D014006FF6A4 /* NKDCrimsonDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* NKDCrimsonDocument.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* NKDCrimsonDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* NKDCrimsonDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1F2DCCA707AA8D24006F9084 /* NKDCrimsonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NKDCrimsonAppDelegate.m; sourceTree = "<group>"; };
+		1F2DCCA807AA8D24006F9084 /* NKDCrimsonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NKDCrimsonAppDelegate.h; sourceTree = "<group>"; };
+		1F63BF7207AA8E0F00966728 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		1F63BF7307AA8E0F00966728 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		1F63BF7807AA8E3800966728 /* CompressMovie.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = CompressMovie.c; sourceTree = "<group>"; };
+		1F63BF7907AA8E3800966728 /* CompressMovie.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CompressMovie.h; sourceTree = "<group>"; };
+		1F63BF7A07AA8E3800966728 /* DTSQTUtilities.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = DTSQTUtilities.c; sourceTree = "<group>"; };
+		1F63BF7B07AA8E3800966728 /* DTSQTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DTSQTUtilities.h; sourceTree = "<group>"; };
+		1F63BF8407AA8E9900966728 /* NKDMutableMovie.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NKDMutableMovie.h; sourceTree = "<group>"; };
+		1F63BF8507AA8E9900966728 /* NKDMutableMovie.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NKDMutableMovie.m; sourceTree = "<group>"; };
+		1F63BF9107AA8ED800966728 /* NSImage-Filter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSImage-Filter.h"; sourceTree = "<group>"; };
+		1F63BF9207AA8ED800966728 /* NSImage-Filter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSImage-Filter.m"; sourceTree = "<group>"; };
+		1F63BF9307AA8ED800966728 /* NSImage-Mosaic.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSImage-Mosaic.h"; sourceTree = "<group>"; };
+		1F63BF9407AA8ED800966728 /* NSImage-Mosaic.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSImage-Mosaic.m"; sourceTree = "<group>"; };
+		1F63BF9507AA8ED800966728 /* NSString+FSSpec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString+FSSpec.h"; sourceTree = "<group>"; };
+		1F63BF9607AA8ED800966728 /* NSString+FSSpec.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString+FSSpec.m"; sourceTree = "<group>"; };
+		1F63BFA607AA8F4100966728 /* NKDConvolutionKernel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NKDConvolutionKernel.h; sourceTree = "<group>"; };
+		1F63BFA707AA8F4100966728 /* NKDConvolutionKernel.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NKDConvolutionKernel.m; sourceTree = "<group>"; };
+		1F63BFAF07AA8F6E00966728 /* NSBezierPath-Saber.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath-Saber.h"; sourceTree = "<group>"; };
+		1F63BFB007AA8F6E00966728 /* NSBezierPath-Saber.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath-Saber.m"; sourceTree = "<group>"; };
+		1F63BFF607AA907A00966728 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		1F67BC8E07AA988500044BBB /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		1F9B55F409892EA900B0230B /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		1FAE5D3407AAA6AB0078308F /* back_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_3.png; sourceTree = "<group>"; };
+		1FAE5D3507AAA6AB0078308F /* play_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_3.png; sourceTree = "<group>"; };
+		1FAE5D3607AAA6AB0078308F /* skip_back_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip_back_3.png; sourceTree = "<group>"; };
+		1FAE5D3707AAA6AB0078308F /* skipforward_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skipforward_3.png; sourceTree = "<group>"; };
+		1FAE5D5407AAA7410078308F /* NKDCrimsonMovieFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDCrimsonMovieFrameView.h; sourceTree = "<group>"; };
+		1FAE5D5507AAA7410078308F /* NKDCrimsonMovieFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDCrimsonMovieFrameView.m; sourceTree = "<group>"; };
+		1FB4929D07AE6B35005122E0 /* keyback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyback.png; sourceTree = "<group>"; };
+		1FB4929E07AE6B35005122E0 /* keyforward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyforward.png; sourceTree = "<group>"; };
+		1FC0879A07AAA2EA00A06846 /* crimson.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = crimson.icns; sourceTree = "<group>"; };
+		1FC087AE07AAA4F300A06846 /* crimsondoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = crimsondoc.icns; sourceTree = "<group>"; };
+		1FC84E3407AEFB35004D896D /* NSColor-interpolate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor-interpolate.h"; sourceTree = "<group>"; };
+		1FC84E3507AEFB35004D896D /* NSColor-interpolate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor-interpolate.m"; sourceTree = "<group>"; };
+		1FF314DD07AB37FC00AA6D24 /* NKDLaserEffectSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDLaserEffectSettings.h; sourceTree = "<group>"; };
+		1FF314DE07AB37FC00AA6D24 /* NKDLaserEffectSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDLaserEffectSettings.m; sourceTree = "<group>"; };
+		2A37F4ACFDCFA73011CA2CEA /* NKDCrimsonDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKDCrimsonDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* NKDCrimsonDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKDCrimsonDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/NKDCrimsonDocument.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* Crimson_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crimson_Prefix.pch; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* Crimson FX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crimson FX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				1F63BF7407AA8E0F00966728 /* Carbon.framework in Frameworks */,
+				1F63BF7507AA8E0F00966728 /* QuickTime.framework in Frameworks */,
+				1F63BFF707AA907A00966728 /* Accelerate.framework in Frameworks */,
+				1F9B560209892EA900B0230B /* QTKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F9B55F409892EA900B0230B /* QTKit.framework */,
+				1F63BFF607AA907A00966728 /* Accelerate.framework */,
+				1F63BF7207AA8E0F00966728 /* Carbon.framework */,
+				1F63BF7307AA8E0F00966728 /* QuickTime.framework */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* Crimson FX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F066E3E07ADB2A50055AE2C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1F2DCCA807AA8D24006F9084 /* NKDCrimsonAppDelegate.h */,
+				2A37F4AEFDCFA73011CA2CEA /* NKDCrimsonDocument.h */,
+				1FAE5D5407AAA7410078308F /* NKDCrimsonMovieFrameView.h */,
+				1FF314DD07AB37FC00AA6D24 /* NKDLaserEffectSettings.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		1F066E3F07ADB2B90055AE2C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1F63BFA607AA8F4100966728 /* NKDConvolutionKernel.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		1F066E4007ADB2C80055AE2C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1F63BF8407AA8E9900966728 /* NKDMutableMovie.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		1F066E4107ADB2D60055AE2C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1FC84E3407AEFB35004D896D /* NSColor-interpolate.h */,
+				1F63BFAF07AA8F6E00966728 /* NSBezierPath-Saber.h */,
+				1F63BF9107AA8ED800966728 /* NSImage-Filter.h */,
+				1F63BF9307AA8ED800966728 /* NSImage-Mosaic.h */,
+				1F63BF9507AA8ED800966728 /* NSString+FSSpec.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		1F63BF8007AA8E4200966728 /* Quicktime-Related */ = {
+			isa = PBXGroup;
+			children = (
+				1F066E4007ADB2C80055AE2C /* Headers */,
+				1F63BF8507AA8E9900966728 /* NKDMutableMovie.m */,
+				1F63BF8107AA8E4B00966728 /* Apple Provided */,
+			);
+			name = "Quicktime-Related";
+			sourceTree = "<group>";
+		};
+		1F63BF8107AA8E4B00966728 /* Apple Provided */ = {
+			isa = PBXGroup;
+			children = (
+				1F9AC5DE07B196A0008024CB /* Headers */,
+				1F63BF7807AA8E3800966728 /* CompressMovie.c */,
+				1F63BF7A07AA8E3800966728 /* DTSQTUtilities.c */,
+			);
+			name = "Apple Provided";
+			sourceTree = "<group>";
+		};
+		1F63BF8E07AA8EB700966728 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1F066E4107ADB2D60055AE2C /* Headers */,
+				1FC84E3507AEFB35004D896D /* NSColor-interpolate.m */,
+				1F63BFB007AA8F6E00966728 /* NSBezierPath-Saber.m */,
+				1F63BF9207AA8ED800966728 /* NSImage-Filter.m */,
+				1F63BF9407AA8ED800966728 /* NSImage-Mosaic.m */,
+				1F63BF9607AA8ED800966728 /* NSString+FSSpec.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		1F63BFA307AA8F1300966728 /* Image-Related */ = {
+			isa = PBXGroup;
+			children = (
+				1F066E3F07ADB2B90055AE2C /* Headers */,
+				1F63BFA707AA8F4100966728 /* NKDConvolutionKernel.m */,
+			);
+			name = "Image-Related";
+			sourceTree = "<group>";
+		};
+		1F9AC5DE07B196A0008024CB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1F63BF7907AA8E3800966728 /* CompressMovie.h */,
+				1F63BF7B07AA8E3800966728 /* DTSQTUtilities.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		1FAE5D3107AAA6910078308F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1FB4929D07AE6B35005122E0 /* keyback.png */,
+				1FB4929E07AE6B35005122E0 /* keyforward.png */,
+				1FAE5D3407AAA6AB0078308F /* back_3.png */,
+				1FAE5D3507AAA6AB0078308F /* play_3.png */,
+				1FAE5D3607AAA6AB0078308F /* skip_back_3.png */,
+				1FAE5D3707AAA6AB0078308F /* skipforward_3.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		1FC087AB07AAA4E500A06846 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				1FC087AE07AAA4F300A06846 /* crimsondoc.icns */,
+				1FC0879A07AAA2EA00A06846 /* crimson.icns */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* Crimson */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				1F63BF8E07AA8EB700966728 /* Categories */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = Crimson;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F63BFA307AA8F1300966728 /* Image-Related */,
+				1F63BF8007AA8E4200966728 /* Quicktime-Related */,
+				1F066E3E07ADB2A50055AE2C /* Headers */,
+				1F2DCCA707AA8D24006F9084 /* NKDCrimsonAppDelegate.m */,
+				2A37F4ACFDCFA73011CA2CEA /* NKDCrimsonDocument.m */,
+				1FAE5D5507AAA7410078308F /* NKDCrimsonMovieFrameView.m */,
+				1FF314DE07AB37FC00AA6D24 /* NKDLaserEffectSettings.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* Crimson_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FAE5D3107AAA6910078308F /* images */,
+				1FC087AB07AAA4E500A06846 /* icons */,
+				1F67BC8E07AA988500044BBB /* Credits.html */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* NKDCrimsonDocument.nib */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* Crimson FX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA754DF089FC69E005D3DC2 /* Build configuration list for PBXNativeTarget "Crimson FX" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crimson FX";
+			productInstallPath = "$(HOME)/Applications";
+			productName = Crimson;
+			productReference = 8D15AC370486D014006FF6A4 /* Crimson FX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1FA754E3089FC69E005D3DC2 /* Build configuration list for PBXProject "crimson" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Crimson */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* Crimson FX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* NKDCrimsonDocument.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				1F2DCCAA07AA8D24006F9084 /* NKDCrimsonAppDelegate.h in Resources */,
+				1F63BF7D07AA8E3800966728 /* CompressMovie.h in Resources */,
+				1F63BF7F07AA8E3800966728 /* DTSQTUtilities.h in Resources */,
+				1F63BF8607AA8E9900966728 /* NKDMutableMovie.h in Resources */,
+				1F63BF9707AA8ED800966728 /* NSImage-Filter.h in Resources */,
+				1F63BF9907AA8ED800966728 /* NSImage-Mosaic.h in Resources */,
+				1F63BF9B07AA8ED800966728 /* NSString+FSSpec.h in Resources */,
+				1F63BFA807AA8F4100966728 /* NKDConvolutionKernel.h in Resources */,
+				1F63BFB107AA8F6E00966728 /* NSBezierPath-Saber.h in Resources */,
+				1F67BC8F07AA988500044BBB /* Credits.html in Resources */,
+				1FC0879B07AAA2EA00A06846 /* crimson.icns in Resources */,
+				1FC087AF07AAA4F300A06846 /* crimsondoc.icns in Resources */,
+				1FAE5D3807AAA6AB0078308F /* back_3.png in Resources */,
+				1FAE5D3907AAA6AB0078308F /* play_3.png in Resources */,
+				1FAE5D3A07AAA6AB0078308F /* skip_back_3.png in Resources */,
+				1FAE5D3B07AAA6AB0078308F /* skipforward_3.png in Resources */,
+				1FAE5D5607AAA7410078308F /* NKDCrimsonMovieFrameView.h in Resources */,
+				1FF314DF07AB37FC00AA6D24 /* NKDLaserEffectSettings.h in Resources */,
+				1FB4929F07AE6B35005122E0 /* keyback.png in Resources */,
+				1FB492A007AE6B35005122E0 /* keyforward.png in Resources */,
+				1FC84E3607AEFB35004D896D /* NSColor-interpolate.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC310486D014006FF6A4 /* NKDCrimsonDocument.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				1F2DCCA907AA8D24006F9084 /* NKDCrimsonAppDelegate.m in Sources */,
+				1F63BF7C07AA8E3800966728 /* CompressMovie.c in Sources */,
+				1F63BF7E07AA8E3800966728 /* DTSQTUtilities.c in Sources */,
+				1F63BF8707AA8E9900966728 /* NKDMutableMovie.m in Sources */,
+				1F63BF9807AA8ED800966728 /* NSImage-Filter.m in Sources */,
+				1F63BF9A07AA8ED800966728 /* NSImage-Mosaic.m in Sources */,
+				1F63BF9C07AA8ED800966728 /* NSString+FSSpec.m in Sources */,
+				1F63BFA907AA8F4100966728 /* NKDConvolutionKernel.m in Sources */,
+				1F63BFB207AA8F6E00966728 /* NSBezierPath-Saber.m in Sources */,
+				1FAE5D5707AAA7410078308F /* NKDCrimsonMovieFrameView.m in Sources */,
+				1FF314E007AB37FC00AA6D24 /* NKDLaserEffectSettings.m in Sources */,
+				1FC84E3707AEFB35004D896D /* NSColor-interpolate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* NKDCrimsonDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = NKDCrimsonDocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FA754E0089FC69E005D3DC2 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 7;
+				FRAMEWORK_SEARCH_PATHS = /Users/jeff/dev/crimson;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Crimson_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Crimson FX";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		1FA754E1089FC69E005D3DC2 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/jeff/dev/crimson;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Crimson_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Crimson FX";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		1FA754E2089FC69E005D3DC2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Users/jeff/dev/crimson;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Crimson_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Crimson FX";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		1FA754E4089FC69E005D3DC2 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+			};
+			name = Development;
+		};
+		1FA754E5089FC69E005D3DC2 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+			};
+			name = Deployment;
+		};
+		1FA754E6089FC69E005D3DC2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FA754DF089FC69E005D3DC2 /* Build configuration list for PBXNativeTarget "Crimson FX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA754E0089FC69E005D3DC2 /* Development */,
+				1FA754E1089FC69E005D3DC2 /* Deployment */,
+				1FA754E2089FC69E005D3DC2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		1FA754E3089FC69E005D3DC2 /* Build configuration list for PBXProject "crimson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA754E4089FC69E005D3DC2 /* Development */,
+				1FA754E5089FC69E005D3DC2 /* Deployment */,
+				1FA754E6089FC69E005D3DC2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
