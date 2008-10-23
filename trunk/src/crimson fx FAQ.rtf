@@ -1,0 +1,87 @@
+{\rtf1\mac\ansicpg10000\cocoartf102
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fswiss\fcharset77 Helvetica-Oblique;
+\f3\fmodern\fcharset77 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww12040\viewh16140\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural
+
+\f0\b\fs24 \cf0 What will Crimson FX cost?\
+
+\f1\b0 \
+I don't know. I am weighing options. I may open source it as I have done with most of my products, or I may make it closed-source freeware, or I may make it shareware. I'd like to release it free, but the simple fact is that it's getting harder and harder for me to find time to develop software for the Mac. Unfortunately, due to the increasing demands on my time, I may have to choose to either charge a small amount for Crimson FX, or give up developing for the Mac.\
+\
+
+\f0\b When will this preview version expire?
+\f1\b0 \
+\
+April 16, 2005. By then, either a new preview version or the final version should be ready.\
+\
+
+\f0\b What do I do if I find a bug?
+\f1\b0 \
+\
+Report it to me at jeff_lamarche@mac.com. I make no promises, but I'll certainly try to fix any issues of which I'm made aware.
+\f0\b \
+\
+Can I have multiple effects in one movie?\
+
+\f1\b0 \
+Yes, but at present, you'll need multiple Crimson FX documents to achieve this. Multiple effects is planned.\
+\
+
+\f0\b Can Crimson FX add laser sound effects to my movie?
+\f1\b0 \
+\
+No. But if you search online, you can find all sorts of sound effects available as MP3s and AIFFs, and you can easily add these to your movie in iMovie, Final Cut, or Premier.\
+\
+
+\f0\b Are there going to be other effects besides lasers?\
+
+\f1\b0 \
+Maybe. There is currently code in place that allows alternative effects such as blurs, mosaics, and a few others, but they are not enabled in this version. I'm not sure that these other effects add much, as they are the types of things typically found in non-linear editing programs as well as offered already by existing Quicktime components.\
+\
+Most likely I will concentrate on effects not easily implemented as iMovie plug-ins.\
+\
+
+\f0\b Why isn't this an iMovie plug-in?
+\f1\b0 \
+\
+The iMovie SDK does not allow (as far as I could tell) the ability to have multiple mouse points. Without the ability to specify a beginning and end to the effect, I couldn't do what I wanted to do. This also allows people using programs other than iMovie to use Crimson. If they add a second mouse point capture to the iMovie SDK, I'll consider creating a Crimson FX plug-in for it.
+\f0\b \
+\
+Can I add effects to my iMovie clips?
+\f1\b0 \
+\
+Certainly. iMovie imports from digital camcorders into DV streams, and stores those streams inside your iMovie project in a folder called "Media". Some imported movies are stored here, while some may appear in the folder called "Shared Movies". If you  navigate to your project, any Quicktime movie or DV stream in those folders should be selectable as a source movie. After you render, you will have to import the new version with the effect added into your iMovie project.\
+
+\f0\b \
+Can I recover partially rendered movies?\
+\
+
+\f1\b0 Yes, but it's a little tricky. First and most importantly, 
+\f2\i don't quit Crimson FX.
+\f1\i0  All temporary files are deleted when Crimson FX quits, so once you quit the program, you will no longer be able to recover aborted or cancelled partial renders.\
+\
+If you navigate to 
+\f3 /tmp
+\f1 , you'll find the Crimson FX intermediate files. These all being with 
+\f3 crimsonrender
+\f1  plus a string of numbers that represent the time the render started. All these files will open in Quicktime Player, so just double click on them until you find the one you're looking for.
+\f0\b \
+\
+What is the "Emitter Bulb" setting?\
+\
+
+\f1\b0 This is an attempt to emulate an effect sporadically used in movies. Although most of the time you don't see this, but in a lot of promo pictures, you'll notice a little bulge of light around the emitter of a laser as it's first fired or at the base of a light saber handle. I thought there might be an interest in this effect, and it was easy to implement, so I threw it in. Keep it off if you don't like it. I usually do.\
+\
+
+\f0\b Is there a way to get a "lens flare" effect at one end of the laser?\
+
+\f1\b0 \
+No. Absolutely not.  Overuse is not a virtue. Lens flare should be used only in situations where a beam of coherent light (if such a thing could really exist) would cause a lens flare in a real camera, which is rarely. Besides, there are any number of tools out there that will add a simulated lens flare for you.\
+\
+
+\f0\b Will there be a Windows or Linux version of Crimson FX?\
+
+\f1\b0 \
+There is currently no plan to create a Windows version. If there is sufficient demand, we will investigate porting Crimson FX to another platform. We've leveraged a lot of really great Apple technologies in creating Crimson, however, and no other platform has them all, so that means a lot of additional code to write, or the  need to license third party libraries. If you want to see a version for another OS, drop us a line, but we're not promising anything.}

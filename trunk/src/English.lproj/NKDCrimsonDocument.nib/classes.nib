@@ -1,0 +1,59 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MyDocument; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {
+            ACTIONS = {
+                cancelButtonPresed = id; 
+                changeFrameBasedOnSlider = id; 
+                effectTypeChanged = id; 
+                nextKeyframe = id; 
+                nudgeFinish = id; 
+                nudgeStart = id; 
+                previewFrame = id; 
+                previousKeyframe = id; 
+                renderMovie = id; 
+                stepBack = id; 
+                stepForward = id; 
+                stepToBeginning = id; 
+                stepToEnd = id; 
+                takeKeyFrameValuesfrom = id; 
+                toggleKeyFrameStatus = id; 
+            }; 
+            CLASS = NKDCrimsonDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                auraColorWell = NSColorWell; 
+                cancelButton = NSButton; 
+                coreColorWell = NSColorWell; 
+                docView = NKDCrimsonMovieFrameView; 
+                effectTypePopUp = NSPopUpButton; 
+                emitterBulbCheckbox = NSButton; 
+                endNudgeDown = NSButton; 
+                endNudgeLeft = NSButton; 
+                endNudgeRight = NSButton; 
+                endNudgeUp = NSButton; 
+                endRoundedCheckbox = NSButton; 
+                endWidthSlider = NSSlider; 
+                endWidthTF = NSTextField; 
+                frameCountText = NSTextField; 
+                frameSlider = NSSlider; 
+                keyframeCheckbox = NSButton; 
+                progressIndicator = NSProgressIndicator; 
+                progressPanel = NSWindow; 
+                progressText = NSTextField; 
+                startNudgeDown = NSButton; 
+                startNudgeLeft = NSButton; 
+                startNudgeRight = NSButton; 
+                startNudgeUp = NSButton; 
+                startRoundedCheckbox = NSButton; 
+                startWidthSlider = NSSlider; 
+                startWidthTF = NSTextField; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = NKDCrimsonMovieFrameView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = NKDToggleBox; LANGUAGE = ObjC; SUPERCLASS = NSBox; }
+    ); 
+    IBVersion = 1; 
+}
